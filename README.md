@@ -12,6 +12,8 @@ docker build -t mypostgres .
 
 docker run --rm  -d -p 5432:5432 mypostgres
 
+docker run --rm   -p 3000:3000 mynode
+
 実行しているDokcerに入る
 
 docker exec -it ［コンテナID］ bash
@@ -21,3 +23,13 @@ docker exec -it ［コンテナID］ bash
 psql -U postgres
 
 SHOW max_connections;
+
+## Postgres の設定チャレンジ
+
+PGTuneで以下を設定。さらに接続の設定を追記しないとエラーになる
+
+https://pgtune.leopard.in.ua/#/
+
+
+
+
