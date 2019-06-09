@@ -1,5 +1,5 @@
 CREATE TABLE web_origins (
-    client_id character varying(36) NOT NULL,
+    client_id int NOT NULL,
     value character varying(255)
 );
 
