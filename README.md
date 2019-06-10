@@ -12,8 +12,6 @@ docker build -t mypostgres .
 
 docker run --rm  -d -p 5432:5432 mypostgres
 
-docker run --rm   -p 3000:3000 mynode
-
 実行しているDokcerに入る
 
 docker exec -it ［コンテナID］ bash
@@ -30,6 +28,8 @@ PGTuneで以下を設定。さらに接続の設定を追記しないとエラ�
 
 https://pgtune.leopard.in.ua/#/
 
+## テストデータSQL
 
+https://mockaroo.com/
 
 
